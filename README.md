@@ -227,3 +227,15 @@ Set-Location ..\frontend
 npm run lint
 npm run build
 ```
+
+## AI Usage
+
+GitHub Copilot di VS Code digunakan sebagai pendamping pengembangan untuk membantu:
+
+- Menyusun dan mengimplementasikan fitur backend NestJS, termasuk autentikasi JWT, CRUD, transaksi order, dan ringkasan dashboard.
+- Membangun halaman frontend Next.js dan menghubungkannya ke REST API.
+- Menyiapkan Docker Compose, migrasi Prisma, dan seed database.
+- Menganalisis error saat instalasi dependency, menjalankan aplikasi, dan menyiapkan unit test serta end-to-end test.
+- Menulis dan merapikan dokumentasi project.
+
+Perubahan yang disarankan AI ditinjau dan divalidasi dengan test, lint, build, serta uji aplikasi menggunakan Docker. Hasil test yang lulus bukan berarti seluruh logika bisnis sudah memiliki cakupan test yang memadai: sebagian besar unit test service dan controller saat ini baru memeriksa inisialisasi class. Pengujian perilaku untuk alur CRUD, autentikasi, dan transaksi masih dapat diperluas.
